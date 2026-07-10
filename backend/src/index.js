@@ -13,17 +13,21 @@ const candidateRoutes = require('./routes/candidates');
 const app = express();
 const server = http.createServer(app);
 
+const normalizeOrigin = (origin) => origin.replace(/\/$/, '');
+
 const configuredOrigins = (process.env.CLIENT_URL || 'http://localhost:3000')
   .split(',')
   .map(origin => origin.trim())
+  .map(normalizeOrigin)
   .filter(Boolean);
 
 const isAllowedOrigin = (origin) => {
   if (!origin) return true;
-  if (configuredOrigins.includes(origin)) return true;
+  const normalizedOrigin = normalizeOrigin(origin);
+  if (configuredOrigins.includes(normalizedOrigin)) return true;
 
   try {
-    const { hostname } = new URL(origin);
+    const { hostname } = new URL(normalizedOrigin);
     return hostname === 'localhost'
       || hostname === '127.0.0.1'
       || hostname.endsWith('.vercel.app');
