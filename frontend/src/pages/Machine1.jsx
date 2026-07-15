@@ -165,7 +165,7 @@ export default function Machine1() {
                 <div style={{
                   background: 'var(--surface2)', borderRadius: 12,
                   padding: '16px', marginBottom: 16,
-                  border: '1px solid rgba(34,197,94,0.3)'
+                  border: '1px solid rgba(138, 244, 9, 0.3)'
                 }}>
                   <div style={{ fontSize: '0.78rem', color: 'var(--text2)', marginBottom: 4 }}>
                     Verified Voter

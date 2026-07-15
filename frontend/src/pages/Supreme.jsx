@@ -73,10 +73,10 @@ export default function Supreme() {
 
   const roleColor = {
     supreme: '#f59e0b',
-    machine1: '#3b82f6',
-    machine2: '#6366f1',
-    machine3: '#22c55e',
-    unassigned: '#64748b',
+    machine1: '#0fc6e6',
+    machine2: '#f6234e',
+    machine3: '#34e116',
+    unassigned: '#d21b49',
   };
 
   return (

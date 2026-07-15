@@ -172,7 +172,7 @@ export default function Machine2() {
             <div style={{
               background: 'var(--surface2)', borderRadius: 12,
               padding: '14px 16px', marginBottom: 20,
-              border: '1px solid rgba(99,102,241,0.3)',
+              border: '1px solid rgba(15, 245, 145, 0.3)',
               display: 'flex', justifyContent: 'space-between', alignItems: 'center'
             }}>
               <div>

@@ -137,7 +137,7 @@ export default function Machine3() {
             }}>
               <div style={{ textAlign: 'center', marginBottom: 12 }}>
                 <div style={{ fontWeight: 800, fontSize: '1rem' }}>🗳️ VOTE RECEIPT</div>
-                <div style={{ fontSize: '0.75rem', color: '#666' }}>Official EVM Receipt</div>
+                <div style={{ fontSize: '0.75rem', color: '#0dcd5a' }}>Official EVM Receipt</div>
               </div>
 
               <div style={{ borderTop: '1px dashed #ccc', margin: '10px 0' }} />
